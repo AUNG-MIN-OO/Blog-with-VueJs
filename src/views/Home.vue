@@ -5,9 +5,9 @@
     <div v-if="posts.length>0">
         <PostList :posts="posts"></PostList>
     </div>  
-    <div v-else class="text-center">
+    <!-- <div v-else class="text-center">
         <Spinner></Spinner>
-    </div>
+    </div> -->
 </template>
 
 <script>

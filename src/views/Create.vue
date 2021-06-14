@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="row justify-content-center align-items-center">
             <div class="card shadow col-6 mt-4">
                 <div class="card-header bg-white text-center">
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </template>
 
 <script>
