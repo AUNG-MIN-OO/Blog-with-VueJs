@@ -1,0 +1,19 @@
+{
+    "posts":[
+        {
+            "title":"post title1",
+            "body":"lorem ipsum1",
+            "id": 1
+        },
+        {
+            "title":"post title2",
+            "body":"lorem ipsum2",
+            "id": 2
+        },
+        {
+            "title":"post title3",
+            "body":"lorem ipsum3",
+            "id": 3
+        }
+    ]
+}
