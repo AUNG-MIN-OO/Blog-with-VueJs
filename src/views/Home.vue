@@ -1,14 +1,12 @@
 <template>
-    <div class="home">
-        <div v-if="error">
-            {{error}}
-        </div>
-        <div v-if="posts.length>0">
-            <PostList :posts="posts"></PostList>
-        </div>
-        <div v-else>
-            <Spinner></Spinner>
-        </div>
+    <div v-if="error">
+        {{error}}
+    </div>
+    <div v-if="posts.length>0">
+        <PostList :posts="posts"></PostList>
+    </div>  
+    <div v-else class="text-center">
+        <Spinner></Spinner>
     </div>
 </template>
 
@@ -29,5 +27,8 @@ export default {
 </script>
 
 <style>
+    .home{
 
+        text-align: center;
+    }
 </style>

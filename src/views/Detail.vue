@@ -1,10 +1,12 @@
 <template>
-    <div v-if="post">
-        <h1>Detail</h1>
-        {{post}}
-    </div>
-    <div v-else>
-        <Spinner></Spinner>
+    <div class="detail">
+        <div v-if="post">
+            <h1>Detail</h1>
+            {{post}}
+        </div>
+        <div v-else>
+            <Spinner></Spinner>
+        </div>
     </div>
 </template>
 
@@ -23,5 +25,7 @@ export default {
 </script>
 
 <style>
-
+    .detail{
+        /* text-align: center; */
+    }
 </style>
