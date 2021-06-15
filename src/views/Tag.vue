@@ -2,18 +2,25 @@
     <div v-if="error">
         {{error}}
     </div>
-    <div v-if="filteredPosts.length">
-        <PostList :posts="filteredPosts"></PostList>
+    <div v-if="filteredPosts.length" class="layout">
+        <div>
+            <PostList :posts="filteredPosts"></PostList>
+        </div>
+        <div>
+            <TagCloud></TagCloud>
+        </div>
     </div>
 </template>
 
 <script>
+import TagCloud from '../components/TagCloud'
 import PostList from '../components/PostList'
 import { computed } from '@vue/runtime-core';
 import getPosts from "../composables/getPosts"
 
 export default {
-  components: { PostList },
+  components: {
+    TagCloud, PostList },
     props: ["tag"],
     setup(props){
         let {posts,error,load} = getPosts()
