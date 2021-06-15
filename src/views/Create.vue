@@ -1,7 +1,7 @@
 <template>
     <!-- <div class="container"> -->
         <div class="row justify-content-center align-items-center">
-            <div class="card shadow col-6 mt-4">
+            <div class="card shadow col-6">
                 <div class="card-header bg-white text-center">
                     <h2 class="font-weight-bold">Create Post</h2>
                 </div>
@@ -34,8 +34,11 @@
 
 <script>
 import { ref } from '@vue/reactivity'
+import { useRouter } from 'vue-router'
+
 export default {
     setup(){
+        let router = useRouter();
         let title = ref("");
         let body = ref("");
         let tag = ref("");
@@ -62,7 +65,8 @@ export default {
                     }
                 )
             })
-            
+            // redirect user to homepage
+            router.push("/");
         }
 
         return {title,body,tag,handleKeydown,tags,addPost}
