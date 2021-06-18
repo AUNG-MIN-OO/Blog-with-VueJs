@@ -13,9 +13,9 @@
                             </div>
                             <p class="mt-4">{{post.body}}</p>
                         </div>
-                    <!-- <div v-else>
-                        <Spinner></Spinner>
-                    </div> -->
+                        <div v-else class="text-center">
+                            <Spinner></Spinner>
+                        </div>
                 </div>
             </div>
         </div>
