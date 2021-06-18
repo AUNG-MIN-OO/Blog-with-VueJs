@@ -1,6 +1,6 @@
 <template>
-    <div class="row justify-content-center layout">
-        <div class="card shadow col-12">
+    <div class="row justify-content-center">
+        <div class="card shadow col-8">
             <div class="card-body">
                 <div class="detail">
                         <div v-if="post">
@@ -18,9 +18,6 @@
                     </div> -->
                 </div>
             </div>
-        </div>
-        <div>
-            <TagCloud></TagCloud>
         </div>
     </div>
 </template>

@@ -7,7 +7,7 @@
             <PostList :posts="filteredPosts"></PostList>
         </div>
         <div>
-            <TagCloud></TagCloud>
+            <TagCloud :posts="posts"></TagCloud>
         </div>
     </div>
 </template>

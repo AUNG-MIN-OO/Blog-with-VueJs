@@ -8,7 +8,7 @@
                 <PostList :posts="posts"></PostList>
             </div>
             <div class="tagcloud">
-                <TagCloud></TagCloud>
+                <TagCloud :posts="posts"></TagCloud>
             </div>
         </div>
     </div>  
